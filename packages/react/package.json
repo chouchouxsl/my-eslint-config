@@ -1,0 +1,30 @@
+{
+    "name": "@r_h_zero/eslint-config-react",
+    "version": "0.0.2",
+    "description": "",
+    "keywords": [
+        "eslint-config"
+    ],
+    "license": "MIT",
+    "homepage": "https://github.com/chouchouxsl/eslint-config",
+    "author": "R_h_zero <15146018521@163.com> (https://github.com/chouchouxsl/)",
+    "files": [
+        "index.js"
+    ],
+    "main": "index.js",
+    "scripts": {
+        "lint": "eslint . --config=index.js"
+    },
+    "peerDependencies": {
+        "eslint": ">=7.4.0"
+    },
+    "dependencies": {
+        "@r_h_zero/eslint-config-ts": "workspace:*",
+        "eslint-plugin-react": "^7.30.0"
+    },
+    "devDependencies": {
+        "eslint": "^8.16.0",
+        "react": "^18.1.0",
+        "typescript": "^4.7.2"
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "compilerOptions": {
+        "target": "esnext",
+        "module": "esnext",
+        "moduleResolution": "node",
+        "strict": true,
+        "forceConsistentCasingInFileNames": true,
+        "allowSyntheticDefaultImports": true,
+        "strictFunctionTypes": false,
+        "jsx": "preserve",
+        "baseUrl": ".",
+        "allowJs": true,
+        "sourceMap": true,
+        "esModuleInterop": true,
+        "resolveJsonModule": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "experimentalDecorators": true,
+        "lib": ["dom", "esnext"],
+        "typeRoots": ["./node_modules/@types/", "./typings"],
+        "noImplicitAny": false,
+        "skipLibCheck": true,
+        "paths": {
+            "@/*": ["src/*"],
+            "#/*": ["typings/*"]
+        }
+    },
+    "include": ["example/**/*.ts", "example/**/*.d.ts", "example/**/*.(t|j)sx", "example/**/*.vue"],
+    "exclude": ["node_modules"]
+}

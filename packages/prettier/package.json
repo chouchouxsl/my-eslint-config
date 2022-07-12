@@ -1,0 +1,29 @@
+{
+    "name": "@r_h_zero/eslint-config-prettier",
+    "version": "0.0.2",
+    "description": "Prettier Config",
+    "keywords": [],
+    "license": "MIT",
+    "homepage": "https://github.com/chouchouxsl/eslint-config",
+    "author": "R_h_zero <15146018521@163.com> (https://github.com/chouchouxsl/)",
+    "files": [
+        "index.js"
+    ],
+    "main": "index.js",
+    "publishConfig": {
+        "access": "public"
+    },
+    "peerDependencies": {
+        "eslint": ">=7.4.0"
+    },
+    "dependencies": {
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-define-config": "^1.5.1",
+        "eslint-plugin-prettier": "^4.2.1",
+        "eslint-plugin-yml": "^1.0.0",
+        "prettier": "^2.7.1"
+    },
+    "devDependencies": {
+        "eslint": "8.19.0"
+    }
+}

@@ -1,0 +1,39 @@
+{
+    "name": "@r_h_zero/eslint-config-basic",
+    "version": "0.0.2",
+    "description": "",
+    "keywords": [],
+    "license": "MIT",
+    "homepage": "https://github.com/chouchouxsl/eslint-config",
+    "bugs": {
+        "url": "https://github.com/chouchouxsl/eslint-config/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/chouchouxsl/eslint-config.git"
+    },
+    "author": "R_h_zero <15146018521@163.com> (https://github.com/chouchouxsl/)",
+    "files": [
+        "index.js"
+    ],
+    "main": "index.js",
+    "publishConfig": {
+        "access": "public"
+    },
+    "peerDependencies": {
+        "eslint": ">=7.4.0"
+    },
+    "dependencies": {
+        "eslint-define-config": "^1.5.1",
+        "eslint-plugin-eslint-comments": "^3.2.0",
+        "eslint-plugin-html": "^6.2.0",
+        "eslint-plugin-import": "^2.26.0",
+        "eslint-plugin-jsonc": "^2.3.1",
+        "eslint-plugin-markdown": "^2.2.1",
+        "eslint-plugin-unicorn": "^42.0.0",
+        "eslint-plugin-yml": "^1.0.0"
+    },
+    "devDependencies": {
+        "eslint": "8.19.0"
+    }
+}

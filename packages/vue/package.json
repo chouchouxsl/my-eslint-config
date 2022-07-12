@@ -1,0 +1,36 @@
+{
+    "name": "@r_h_zero/eslint-config-vue",
+    "version": "0.0.2",
+    "description": "",
+    "keywords": [],
+    "license": "MIT",
+    "homepage": "https://github.com/chouchouxsl/eslint-config",
+    "bugs": {
+        "url": "https://github.com/chouchouxsl/eslint-config/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/chouchouxsl/eslint-config.git"
+    },
+    "author": "R_h_zero <15146018521@163.com> (https://github.com/chouchouxsl/)",
+    "files": [
+        "index.js"
+    ],
+    "main": "index.js",
+    "publishConfig": {
+        "access": "public"
+    },
+    "peerDependencies": {
+        "eslint": ">=7.4.0",
+        "vue": "^2.0.0 || ^3.0.0"
+    },
+    "dependencies": {
+        "@r_h_zero/eslint-config-ts": "workspace:*",
+        "eslint-define-config": "^1.5.1",
+        "eslint-plugin-vue": "^9.0.1",
+        "local-pkg": "^0.4.1"
+    },
+    "devDependencies": {
+        "eslint": "^8.16.0"
+    }
+}
