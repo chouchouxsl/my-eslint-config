@@ -11,6 +11,9 @@
     "files": [
         "index.js"
     ],
+    "publishConfig": {
+        "access": "public"
+    },
     "main": "index.js",
     "scripts": {
         "lint": "eslint . --config=index.js"
