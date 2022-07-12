@@ -1,20 +1,18 @@
+const { readFileSync } = require('fs')
 const { defineConfig } = require('eslint-define-config')
-// const { readFileSync } = require('fs')
-// const { resolveModule } = require('local-pkg')
+const { resolveModule } = require('local-pkg')
 
-// const vuePath = resolveModule('vue/package.json')
+const vuePath = resolveModule('vue/package.json')
 
-// let pkg
+let pkg
 
-// try {
-//     pkg = JSON.parse(readFileSync(vuePath, 'utf8'))
-// } catch {}
+try {
+    pkg = JSON.parse(readFileSync(vuePath, 'utf8'))
+} catch {}
 
-// let vueVersion = pkg && pkg.version
-// vueVersion = +(vueVersion && vueVersion[0])
-// vueVersion = Number.isNaN(vueVersion) ? 3 : vueVersion
-
-// vueVersion === 3 ? 'plugin:vue/vue3-recommended' : 'plugin:vue/recommended',
+let vueVersion = pkg && pkg.version
+vueVersion = +(vueVersion && vueVersion[0])
+vueVersion = Number.isNaN(vueVersion) ? 3 : vueVersion
 
 module.exports = defineConfig({
     globals: {
@@ -51,7 +49,10 @@ module.exports = defineConfig({
             }
         }
     ],
-    extends: ['plugin:vue/vue3-recommended', '@r_h_zero/eslint-config-ts'],
+    extends: [
+        vueVersion === 3 ? 'plugin:vue/vue3-recommended' : 'plugin:vue/recommended',
+        '@r_h_zero/eslint-config-ts'
+    ],
     rules: {
         'vue/max-attributes-per-line': 'off',
         'vue/no-v-html': 'off',
