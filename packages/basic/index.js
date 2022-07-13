@@ -6,6 +6,13 @@ module.exports = defineConfig({
         browser: true,
         node: true
     },
+    globals: {
+        describe: false,
+        it: false,
+        expect: false,
+        jest: false,
+        $: false
+    },
     extends: [
         'eslint:recommended',
         'plugin:import/recommended',
@@ -180,7 +187,6 @@ module.exports = defineConfig({
         'array-callback-return': 'error',
         'block-scoped-var': 'error',
         'no-alert': 'warn',
-        'no-case-declarations': 'error',
         'no-fallthrough': ['warn', { commentPattern: 'break[\\s\\w]*omitted' }],
         'no-multi-str': 'error',
         'no-with': 'error',
@@ -195,7 +201,6 @@ module.exports = defineConfig({
         'unicorn/custom-error-definition': 'error',
         'unicorn/error-message': 'error',
         'unicorn/escape-case': 'error',
-        'unicorn/explicit-length-check': 'error',
         'unicorn/import-index': 'error',
         'unicorn/new-for-builtins': 'error',
         'unicorn/no-array-callback-reference': 'error',

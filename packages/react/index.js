@@ -1,4 +1,16 @@
 module.exports = {
+    overrides: [
+        {
+            files: ['*.(j|t)sx'],
+            parserOptions: {
+                ecmaFeatures: {
+                    experimentalObjectRestSpread: true,
+                    jsx: true
+                },
+                sourceType: 'module'
+            }
+        }
+    ],
     extends: ['plugin:react/recommended', '@r_h_zero/eslint-config-ts'],
     settings: {
         react: {
@@ -6,6 +18,8 @@ module.exports = {
         }
     },
     rules: {
+        'react/display-name': 0,
+        'react/jsx-key': 0,
         'react/no-danger': 0,
         'react/forbid-prop-types': 0,
         'react/prop-types': 0,
