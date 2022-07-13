@@ -4,7 +4,6 @@ importers:
 
   .:
     specifiers:
-      '@latest': link:vue/@latest
       '@r_h_zero/eslint-config': workspace:*
       '@types/react': ^18.0.15
       '@types/react-dom': ^18.0.6
@@ -14,7 +13,6 @@ importers:
       typescript: ^4.7.4
       vue: ^3.2.37
     devDependencies:
-      '@latest': link:vue/@latest
       '@r_h_zero/eslint-config': link:packages/all
       '@types/react': 18.0.15
       '@types/react-dom': 18.0.6
