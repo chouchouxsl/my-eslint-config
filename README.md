@@ -30,7 +30,7 @@ pnpm i -D @r_h_zero/eslint-config
     "arrowParens": "avoid",
     "semi": false,
     "singleQuote": true,
-    "printWidth": 120,
+    "printWidth": 80,
     "tabWidth": 4,
     "htmlWhitespaceSensitivity": "ignore",
     "trailingComma": "none",
