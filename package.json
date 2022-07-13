@@ -10,7 +10,6 @@
         "release": "standard-version && pnpm publish -r"
     },
     "devDependencies": {
-        "@latest": "link:vue/@latest",
         "@r_h_zero/eslint-config": "workspace:*",
         "@types/react": "^18.0.15",
         "@types/react-dom": "^18.0.6",
