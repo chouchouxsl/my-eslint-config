@@ -20,7 +20,10 @@ pnpm i -D @r_h_zero/eslint-config
 ```jsonc
 // .eslintrc.json
 {
-    "extends": "@r_h_zero"
+    "extends": "@r_h_zero",
+    "rules": {
+        // your rules...
+    }
 }
 ```
 
@@ -44,10 +47,10 @@ pnpm i -D @r_h_zero/eslint-config
 ```jsonc
 // settings.json
 {
-  "prettier.enable": false,
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
-  }
+    "prettier.enable": false,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    }
 }
 ```
 
