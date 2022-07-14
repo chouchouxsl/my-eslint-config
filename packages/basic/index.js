@@ -187,6 +187,7 @@ module.exports = defineConfig({
         'array-callback-return': 'error',
         'block-scoped-var': 'error',
         'no-alert': 'warn',
+        'no-case-declarations': 'off',
         'no-fallthrough': ['warn', { commentPattern: 'break[\\s\\w]*omitted' }],
         'no-multi-str': 'error',
         'no-with': 'error',
