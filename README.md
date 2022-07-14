@@ -17,6 +17,7 @@ pnpm i -D @r_h_zero/eslint-config # JavaScript, TypeScript, Vue 3 and Prettier
 pnpm i -D @r_h_zero/eslint-config
 ```
 
+### Eslint Config
 ```jsonc
 // .eslintrc.json
 {
@@ -27,6 +28,7 @@ pnpm i -D @r_h_zero/eslint-config
 }
 ```
 
+### Prettier Config
 ```jsonc
 // .prettierrc
 {
